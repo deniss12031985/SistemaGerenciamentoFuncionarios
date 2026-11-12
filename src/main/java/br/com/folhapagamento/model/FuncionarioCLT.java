@@ -22,7 +22,11 @@ public class FuncionarioCLT {
                     "O salario-base nao pode ser negativo."
             );
         }
-
+        if (beneficios.signum() < 0) {
+            throw new IllegalArgumentException(
+                    "Os beneficios nao podem ser negativos."
+            );
+        }
         this.codigo = codigo;
         this.nome = nome;
         this.cpf = cpf;
