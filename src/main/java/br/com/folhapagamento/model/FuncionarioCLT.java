@@ -17,6 +17,12 @@ public class FuncionarioCLT {
             BigDecimal salarioBase,
             BigDecimal beneficios) {
 
+        if (salarioBase.signum() < 0) {
+            throw new IllegalArgumentException(
+                    "O salario-base nao pode ser negativo."
+            );
+        }
+
         this.codigo = codigo;
         this.nome = nome;
         this.cpf = cpf;
