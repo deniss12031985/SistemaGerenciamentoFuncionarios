@@ -36,4 +36,16 @@ class FuncionarioCLTTest {
                 )
         );
     }
+    @Test
+    void deveRejeitarBeneficiosNegativos() {
+        assertThrows(IllegalArgumentException.class, () ->
+                new FuncionarioCLT(
+                        1,
+                        "Ana Souza",
+                        "52998224725",
+                        new BigDecimal("3000.00"),
+                        new BigDecimal("-50.00")
+                )
+        );
+    }
 }
