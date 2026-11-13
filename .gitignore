@@ -1,7 +1,35 @@
+﻿# Maven
 target/
+
+# IDEs
 .idea/
 *.iml
 .classpath
 .project
 .settings/
+
+# Sistema operacional
 .DS_Store
+
+# Java
+*.class
+*.jar
+*.war
+*.nar
+*.ear
+
+# Logs
+*.log
+
+# Arquivos temporários
+*.ctxt
+.mtj.tmp/
+
+# Arquivos compactados
+*.zip
+*.tar.gz
+*.rar
+
+# JVM
+hs_err_pid*
+replay_pid*
